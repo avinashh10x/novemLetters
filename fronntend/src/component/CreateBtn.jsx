@@ -39,6 +39,7 @@ function CreateBtn() {
             toast.success("Letter created successfully");
             setShowModal(false);
 
+            
             navigate(`/letter/${encodeURIComponent(newLetter.ReferenceNo)}`);
         } catch (error) {
             console.error('Error creating letter:', error);

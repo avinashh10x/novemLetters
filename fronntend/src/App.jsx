@@ -11,6 +11,7 @@ import ExcelUpload from './component/ExcelUpload'
 // import FilteredPage from './pages/FilteredPage'
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
 import NotFund from './pages/NotFund';
+import LetterSelection from './formatesSelection/LetterSelection';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/letter/:RefID' element={<ShowPdf />} />
           <Route path='/allLetter' element={<AllLetters />} />
+          
+          <Route path='/letterSelection' element={<LetterSelection />} />
+
           <Route path='/result' element={<ResultPage />} />
           <Route path='/bulk-upload' element={<ExcelUpload />} />
           <Route path='*' element={<NotFund />} />
