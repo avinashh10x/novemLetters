@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Certificate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #d4edd3;
+      /* padding: 30px; */
+      max-width: 1000px;
+      margin: auto;
+      border: 1px solid #ddd;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('./novem_controls-removebg-preview.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 70% 60%;
+      filter: blur(5px);
+      opacity: 0.5;
+      z-index: 0;
+    }
+
+    body>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .lefttopimg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .lefttopimg img {
+      width: 90%;
+    }
+
+    .righttopimg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      /* width: 10%; */
+      display: flex;
+      justify-content: flex-end;
+      align-items: start;
+    }
+
+    .righttopimg img {
+      width: 40%;
+      margin-right: 10px;
+    }
+
+    .certificateLayout {
+      width: 80%;
+      margin-inline: auto;
+      text-align: center;
+      font-weight: 700;
+      margin-top: 131px;
+    }
+
+    .certificate-title h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .certificate-title h2 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .certificate-title p {
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .content {
+      margin: 40px 0;
+      font-size: 18px;
+    }
+
+    .highlight {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bottom-section {
+     
+    }
+
+    .sign-stamp-container {
+      display: flex;
+      /* background-color: #fff; */
+      width: 100%;
+      justify-content: space-around;
+      position: absolute;
+    }
+
+    .sign-stamp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sign-stamp img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 5px;
+      object-fit: contain;
+      /* mix-blend-mode: multiply; */
+      /* background-color: white; */
+    }
+
+    .sign-stamp div {
+      font-weight: bold;
+    }
+
+    .bottom-section {
+      width: 100%;
+      background-color: transparent;
+    }
+
+    .bottom-section img{
+      width: 100%;
+    }
+
+
+    
+ 
+  
+  </style>
+</head>
+
+<body>
+  <!-- Top Left Design (Optional SVG, remove if not needed) -->
+  <!-- <svg class="top-left-svg" viewBox="0 0 200 100">
+    <path d="M0 100 Q50 0 200 100" fill="#ff9800" />
+  </svg> -->
+
+  <div class="header">
+    <!-- Left badge image -->
+    <div class="lefttopimg">
+      <img src="./element_1-removebg-preview.png" alt="Certified Badge" />
+    </div>
+
+    <!-- Right logo image -->
+    <div class="righttopimg">
+      <img src="./novem_controls-removebg-preview.jpg" alt="Novem Controls" />
+    </div>
+  </div>
+
+  <div class="certificateLayout">
+    <div class="certificate-title">
+      <h1>CERTIFICATE</h1>
+      <h2>OF INTERNSHIP</h2>
+      <p>THIS CERTIFICATE IS PROUDLY PRESENTED TO</p>
+    </div>
+
+    <div class="content">
+      <div class="highlight">NISHANT KUMAR PANDEY</div>
+      <p>
+        S/O SH Sanjeev Pandey FROM Khalsa College of engineering and technology Amritsar,
+        Rollno. 2204891 of BRANCH BCA. WHO HAS SUCESSFULLY Completed HIS/HER FOUR/SIX WEEKS
+        INDUSTRIAL INTERNSHIP PROGRAM From 15-06-2024 to 30-07-2024 in COURSE of Web Designing
+        at our organization.<br /><br />
+        WE WISH HIM/HER A VERY SUCCESSFUL CAREER AHEAD.
+      </p>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <!-- Manager Signature and Stamp -->
+    <div class="sign-stamp-container">
+      <div class="sign-stamp">
+        <img src="./sig.png" alt="Signature" />
+        <div>MANAGER</div>
+      </div>
+
+      <!-- CEO Signature -->
+      <div class="sign-stamp">
+        <img src="./signature.jpg" alt="Stamp" />
+        <div>CEO</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <img src="./elemen_2-removebg-preview.png" alt="bottom-section">
+  </div>
+
+  <!-- Bottom Left Design SVG -->
+  
+</body>
+
+</html>

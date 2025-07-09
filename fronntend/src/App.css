@@ -1,0 +1,30 @@
+/* input,select{
+    background: red;
+}
+
+
+
+label{
+    color: blue;
+    position: absolute;
+} */
+
+
+button{
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: gray;
+    /* font-size: 20px; */
+}
+/* Hide scrollbar but allow scrolling */
+select {
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+select::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
